@@ -1,4 +1,4 @@
-const baseUrl =  "/api";
+const baseUrl =  "chaoxing.roginx.ink/allinone";
 
 export const login_api = baseUrl + '/login';
 
