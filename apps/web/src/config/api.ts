@@ -1,4 +1,4 @@
-const baseUrl = '';
+const baseUrl = '/api';
 
 export const login_api = baseUrl + '/login';
 
