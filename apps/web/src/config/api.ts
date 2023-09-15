@@ -1,4 +1,4 @@
-const baseUrl = window.location.host+':5000';
+const baseUrl = "/chaoxing-api";
 
 export const login_api = baseUrl + '/login';
 
