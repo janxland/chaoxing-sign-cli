@@ -6,8 +6,16 @@ import { visualizer } from 'rollup-plugin-visualizer';
 export default defineConfig({
   plugins: [react(), visualizer()],
   server: {
-    port: 3000
+    port: 80,
+    proxy: {
+      '/api': {
+        target: 'http://localhost:5000/',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ''),
+      },
+    },
   },
+  
   base: '/',
   build: {
     sourcemap: false
