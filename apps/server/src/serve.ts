@@ -317,7 +317,7 @@ process.on('SIGINT', () => {
 
 // 若在服务器，直接运行
 if (!ENVJSON.env.SERVERLESS)
-  app.listen(5000, () => {
+  app.listen(80, () => {
     console.log('API Server: http://localhost:5000');
   });
 
