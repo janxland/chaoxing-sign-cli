@@ -1,4 +1,4 @@
-const baseUrl = '/api';
+const baseUrl = window.location.host+':5000';
 
 export const login_api = baseUrl + '/login';
 
