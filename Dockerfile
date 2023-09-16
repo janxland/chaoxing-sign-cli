@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM arm32v7/ubuntu
+FROM alpine:3.17
 
 WORKDIR /app
 
